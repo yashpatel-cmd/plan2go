@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#f0f9ff];
+  }
+}
+
+.search-box {
+  @apply bg-white rounded-full shadow-lg p-4 flex gap-4 items-center max-w-4xl mx-auto mt-8;
+}
+
+.search-input {
+  @apply flex-1 border-r border-gray-200 pr-4;
+}
+
+.search-label {
+  @apply text-sm font-medium text-gray-600 mb-1 block;
+}
+
+.search-field {
+  @apply w-full text-lg outline-none;
+}
