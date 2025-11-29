@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Sitemap: https://plan2go.com/sitemap.xml
+
+
+
+
+
+
+

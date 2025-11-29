@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Users collection - users can read/write their own data
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Login activities collection
+    match /loginActivities/{activityId} {
+      // Users can read their own login activities
+      allow read: if request.auth != null && 
+        resource.data.userId == request.auth.uid;
+      
+      // Allow writing login activities (for the app to log activities)
+      allow write: if request.auth != null;
+      
+      // Allow reading all activities for admin dashboard (temporary for development)
+      // In production, implement proper admin role checking
+      allow read: if request.auth != null;
+    }
+  }
+}

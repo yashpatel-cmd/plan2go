@@ -2,9 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <link rel="icon" href="https://www.svgrepo.com/show/278839/airplane-plane.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PLAN2GO – Book Hotels, Plan Trips, Travel Together</title>
+    <meta name="description" content="PLAN2GO helps you find hotels, plan itineraries, and travel with friends. Compare stays, save trips, and manage bookings." />
+    <link rel="canonical" href="https://plan2go.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://plan2go.com/" />
+    <meta property="og:title" content="PLAN2GO – Book Hotels, Plan Trips, Travel Together" />
+    <meta property="og:description" content="Find hotels in India and worldwide, create itineraries, and coordinate with companions." />
+    <meta property="og:image" content="https://plan2go.com/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PLAN2GO – Book Hotels, Plan Trips, Travel Together" />
+    <meta name="twitter:description" content="Find hotels in India and worldwide, create itineraries, and coordinate with companions." />
+    <meta name="twitter:image" content="https://plan2go.com/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PLAN2GO",
+        "url": "https://plan2go.com/",
+        "logo": "https://plan2go.com/og-image.png",
+        "sameAs": []
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "PLAN2GO",
+        "url": "https://plan2go.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://plan2go.com/agoda?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
   </head>
   <body>
     <div id="root"></div>

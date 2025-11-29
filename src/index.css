@@ -23,3 +23,8 @@
 .search-field {
   @apply w-full text-lg outline-none;
 }
+
+.login-btn{
+  background-color: black;
+  font-size: 30px;
+}
